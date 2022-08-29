@@ -1,0 +1,12 @@
+version: '3'
+services:
+   pgdb:
+    image: "postgres:11"
+    container_name: "pgdb"
+    environment:
+      - POSTGRES_USER=root
+      - POSTGRES_PASSWORD=rootroot
+    ports:
+      - "54320:5432"
+    volumes:
+      - /Users/polina-m/back/db/data:/var/lib/postgresql/data
